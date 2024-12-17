@@ -1,0 +1,94 @@
+
+
+{% extends 'base.html' %}
+{% load static %}
+
+{%block title%}
+
+Event
+
+{% endblock %}
+{%block content%}
+
+<div class="container" >
+    {% for i in eve %}
+    <div class="card text-center" style="width: 18rem;display: inline-block;margin: 20px;">
+        <img src="{{i.img.url}}"class="card-img-top" alt="..."height="150px" width="200px" >
+        <div class="card-body">
+            <h5 class="card-title">{{i.name}}</h5>
+            <p class="card-text">{{i.desc}}</p>
+        </div>
+    </div>
+    {% endfor %}
+    <!--
+    <div class="card text-center" style="width: 18rem;display: inline-block;margin: 20px;">
+        <img src="{% static 'image/seminar.jpeg' %}"class="card-img-top" alt="..."height="150px" width="200px" >
+        <div class="card-body">
+            <h5 class="card-title">Seminar</h5>
+            <p class="card-text">Bring your vision to life with our seminar planning services. We ensure smooth logistics, impactful presentations, and an environment that fosters learning and interaction for you</p>
+        </div>
+    </div>
+    
+    <div class="card text-center" style="width: 18rem;display: inline-block;margin: 20px;">
+        <img src="{% static 'image/sports.jpeg' %}"class="card-img-top" alt="..."height="150px" width="200px" >
+        <div class="card-body">
+            <h5 class="card-title">Sports event</h5>
+            <p class="card-text">Turn your sports event into a memorable occasion! From logistics to audience management, we are your trusted partner in delivering high-energy, well-organized events.</p>
+        </div>
+    </div>
+    <div class="card text-center" style="width: 18rem;display: inline-block;margin: 20px;">
+        <img src="{% static 'image/wedding.jpeg' %}"class="card-img-top" alt="..."height="150px" width="200px" >
+        <div class="card-body">
+            <h5 class="card-title">Wedding </h5>
+            <p class="card-text">Your big day deserves nothing but perfection. Let us create the wedding of your dreams with meticulous planning, breathtaking decor, and flawless execution</p>
+        </div>
+    </div>
+    <div class="card text-center" style="width: 18rem;display: inline-block;margin: 20px;">
+        <img src="{% static 'image/bday.jpeg' %}"class="card-img-top" alt="..."height="150px" width="200px" >
+        <div class="card-body">
+            <h5 class="card-title">Birthday parties</h5>
+            <p class="card-text">Make birthdays magical and stress-free! From themed decorations to fun activities, we ensure a joyous and memorable celebration for all ages</p>
+        </div>
+    </div>
+    <div class="card text-center" style="width: 18rem;display: inline-block;margin: 20px;">
+        <img src="{% static 'image/teambuild.jpeg' %}"class="card-img-top" alt="..."height="150px" width="200px" >
+        <div class="card-body">
+            <h5 class="card-title">Team building event</h5>
+            <p class="card-text">Strengthen your team's bond with our expertly planned team-building activities. We provide engaging, interactive, and goal-oriented events tailored to your needs</p>
+        </div>
+    </div>
+    
+    <div class="card text-center" style="width: 18rem;display: inline-block;margin: 20px;">
+        <img src="{% static 'image/fashion.jpeg' %}"class="card-img-top" alt="..."height="150px" width="200px" >
+        <div class="card-body">
+            <h5 class="card-title">Fashion event</h5>
+            <p class="card-text">Set the stage for glamour and creativity! Our team ensures flawless coordination, elegant setups, and smooth execution for your fashion shows or brand launches</p>
+        </div>
+    </div>
+    <div class="card text-center" style="width: 18rem;display: inline-block;margin: 20px;">
+        <img src="{% static 'image/exhibition.jpeg' %}"class="card-img-top" alt="..."height="150px" width="200px" >
+        <div class="card-body">
+            <h5 class="card-title">Exhibitions</h5>
+            <p class="card-text">Turn your exhibition into a standout success. From booth design to attendee management, we handle every detail to showcase your products or services effectively with dedication</p>
+        </div>
+    </div>
+    <div class="card text-center" style="width: 18rem;display: inline-block;margin: 20px;">
+        <img src="{% static 'image/networking.jpeg' %}"class="card-img-top" alt="..."height="150px" width="200px" >
+        <div class="card-body">
+            <h5 class="card-title">Networking events</h5>
+            <p class="card-text">Create connections that matter! We provide the perfect ambiance, professional logistics, and thoughtful touches to elevate your networking events</p>
+        </div>
+    </div>
+    <div class="card text-center" style="width: 18rem;display: inline-block;margin: 20px;">
+    <img src="{% static 'image/artand cul.jpeg' %}"class="card-img-top" alt="..."height="150px" width="200px" >
+    <div class="card-body">
+        <h5 class="card-title">Art and cultural events</h5>
+        <p class="card-text">Celebrate art and culture with flair and finesse! We handle every detail, from artist coordination to stage design, creating an unforgettable experience for your audience</p>
+    </div>
+</div>-->
+
+</div>
+
+
+
+{%endblock%}
